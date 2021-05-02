@@ -1,0 +1,17 @@
+DualWord-index 0.4.1
+	- bug fixes.
+	
+DualWord-index 0.4.0
+	- progress bar, non-blocking loading.
+	
+DualWord-index 0.3.2
+	- bug fixes.
+	
+DualWord-index 0.3.1
+	- bug fixes.
+	
+DualWord-index 0.3.0
+	- interface changes and bug fixes.
+	
+DualWord-index 0.2.0
+	- search using default Xapian query parser.

@@ -1,0 +1,14 @@
+DualWord-index - cross-platform Xapian index viewer.
+
+With its help you can:
+	-browse documents.
+	-view and sort a list of terms.
+	-perform search using default Xapian query parser, no stemming.
+   
+How to build:
+	- prerequisites: Qt4, Xapian
+	- qmake
+	- make
+
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Source code: http://github.com/dualword/dualword-index/

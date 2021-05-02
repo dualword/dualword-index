@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DualWord-index
+Comment=Xapian index viewer
+Exec=dualword-index
+Icon=dualword-index
+Terminal=false
+Categories=Development;
+StartupNotify=true
+Keywords=Viewer

@@ -1,0 +1,6 @@
+?package(dualword-index): \
+	needs="X11" \
+	hints="Viewer" \
+	section="Applications/Programming" \
+	title="DualWord-index" \
+	command="/usr/bin/dualword-index"
