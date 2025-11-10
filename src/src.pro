@@ -2,14 +2,11 @@ include("dualword-index.version.pri")
 
 TARGET = dualword-index
 TEMPLATE = app
-CONFIG += qt no_keywords release
-
 message(Building: = $${TARGET} - $${VERSION})
+CONFIG += qt no_keywords debug
+QT += widgets
 
-QMAKE_CXXFLAGS += $$CFLAGS $$CPPFLAGS $$CXXFLAGS
-QMAKE_LFLAGS += $$LDFLAGS
-
-QMAKE_CXXFLAGS += -std=c++0x
+QMAKE_CXXFLAGS += -std=c++17
 
 HEADERS = \
 	Table.h \
@@ -27,16 +24,16 @@ SOURCES = \
 	List1Model.cpp \
 	MainWindow.cpp \
 	DualWordIndex.cpp	
-						
-OBJECTS_DIR = .build/obj
-MOC_DIR     = .build/moc
-RCC_DIR     = .build/rcc
-		
+
 unix {
-	include("dualword-index.unix.pri")
+        include("dualword-index.unix.pri")
 }
 
 win32 {
-	INCLUDEPATH += "c:/MinGW/include"
+        INCLUDEPATH += "c:/MinGW/include"
 	LIBS += -lxapian
 }
+
+OBJECTS_DIR = .build/obj
+MOC_DIR     = .build/moc
+RCC_DIR     = .build/rcc

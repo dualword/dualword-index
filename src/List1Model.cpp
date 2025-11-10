@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2013 Alexander Busorgin
+ * Copyright (C) 2013-2025 Alexander Busorgin
  *
- *	This file is part of DualWord-index. Website: http://github.com/dualword/dualword-index/
+ *	This file is part of DualWord-index. Website: https://github.com/dualword/dualword-index/
  *
  *	DualWord-index is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  *	You should have received a copy of the GNU General Public License
  *	along with DualWord-index.  If not, see <http://www.gnu.org/licenses/>.
  *
-*/
+ */
 
 #include "List1Model.h"
 
@@ -75,15 +75,15 @@ void List1Model::sort ( int column, Qt::SortOrder order ) {
 
 	if(order != Qt::SortOrder::AscendingOrder){
 		switch (column){
-			case 0: qSort(terms.begin(), terms.end(), TermL() ); break;
-			case 1: qSort(terms.begin(), terms.end(), dcL() ); break;
-			case 2: qSort(terms.begin(), terms.end(), tcL() ); break;
+            case 0: std::sort(terms.begin(), terms.end(), TermL() ); break;
+            case 1: std::sort(terms.begin(), terms.end(), dcL() ); break;
+            case 2: std::sort(terms.begin(), terms.end(), tcL() ); break;
 		}
 	}else{
 		switch (column){
-			case 0: qSort(terms.begin(), terms.end(), TermG() ); break;
-			case 1: qSort(terms.begin(), terms.end(), dcG() ); break;
-			case 2: qSort(terms.begin(), terms.end(), tcG() ); break;
+            case 0: std::sort(terms.begin(), terms.end(), TermG() ); break;
+            case 1: std::sort(terms.begin(), terms.end(), dcG() ); break;
+            case 2: std::sort(terms.begin(), terms.end(), tcG() ); break;
 		}
 	}
 

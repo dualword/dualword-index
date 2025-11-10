@@ -1,16 +1,20 @@
 Source: dualword-index
-Section: utils
+Section: utilities
 Priority: optional
 Maintainer: 
-Build-Depends: debhelper (>= 9), libqt4-dev (>= 4.6), libxapian-dev (>= 1.2)
-Standards-Version: 3.9.4
-Homepage: http://github.com/dualword/dualword-index/
+Build-Depends: debhelper-compat (= 13), automake, qt6-base-dev, libxapian-dev
+Standards-Version: 4.7.2
+Homepage: https://github.com/dualword/dualword-index
+Vcs-Browser: https://github.com/dualword/dualword-index
+Vcs-Git: https://github.com/dualword/dualword-index.git
+Rules-Requires-Root: no
 
 Package: dualword-index
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description:  cross-platform Xapian index viewer (Qt version)
+Description:  cross-platform Xapian index viewer
  With its help you can:
-   -browse documents.
-   -view and sort a list of terms.
-   -perform search using default Xapian query parser, no stemming.
+  -browse documents.
+  -view and sort a list of terms.
+  -perform search using default Xapian query parser, no stemming.
+ Source code: https://github.com/dualword/dualword-index.

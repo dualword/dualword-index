@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2013 Alexander Busorgin
+ * Copyright (C) 2013-2025 Alexander Busorgin
  *
- *	This file is part of DualWord-index. Website: http://github.com/dualword/dualword-index/
+ *	This file is part of DualWord-index. Website: https://github.com/dualword/dualword-index/
  *
  *	DualWord-index is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU General Public License as published by

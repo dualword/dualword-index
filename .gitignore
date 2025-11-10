@@ -1,10 +1,12 @@
+#
+dualword-index
+.build
+Makefile
+/tr/*.qm
+.qmake.stash
 
+#
 /.cproject
 /.project
 /.externalToolBuilders
 /.settings
-
-dualword-index
-.build
-Makefile
-

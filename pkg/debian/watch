@@ -1,2 +1,2 @@
-version=3
-http://sf.net/dualword-index/dualword-index-([\d\.]+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
+version=4
+https://github.com/dualword/dualword-index/tags .*/v?(\d.*)@ARCHIVE_EXT@

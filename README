@@ -6,9 +6,9 @@ With its help you can:
 	-perform search using default Xapian query parser, no stemming.
    
 How to build:
-	- prerequisites: Qt4, Xapian
+        - prerequisites: Qt 6.0, Xapian 1.4.1
 	- qmake
 	- make
 
-License: GNU GENERAL PUBLIC LICENSE Version 3
-Source code: http://github.com/dualword/dualword-index/
+License: GPL-3+ (GPL-3.0-or-later)
+Source code: https://github.com/dualword/dualword-index/

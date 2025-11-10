@@ -5,11 +5,9 @@ With its help you can:
  - view and sort a list of terms.  
  - perform search using default Xapian query parser, no stemming.  
 
-Third Party Software:  
- - Qt 4.8.6 License: LGPL v2.1  
- - Xapian 1.2.12 License: GNU General Public License  
- 
-License: GNU GENERAL PUBLIC LICENSE Version 3  
-Source code: http://github.com/dualword/dualword-index/  
+ License: GPL-3+ (GPL-3.0-or-later)  
+Source code: https://github.com/dualword/dualword-index/  
 
-![Screenshot](etc/screenshot/dualword-index.gif)
+<p align="middle">
+<img src="etc/screenshot/dualword-index.gif" width="150" height="100">
+</p>

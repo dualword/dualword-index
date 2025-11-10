@@ -1,7 +1,7 @@
 /*
- * Copyright (C) 2013 Alexander Busorgin
+ * Copyright (C) 2013-2025 Alexander Busorgin
  *
- *	This file is part of DualWord-index. Website: http://github.com/dualword/dualword-index/
+ *	This file is part of DualWord-index. Website: https://github.com/dualword/dualword-index/
  *
  *	DualWord-index is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  *	You should have received a copy of the GNU General Public License
  *	along with DualWord-index.  If not, see <http://www.gnu.org/licenses/>.
  *
-*/
+ */
 
 
 #include "Table.h"
@@ -25,7 +25,7 @@
 #include "List1Model.h"
 #include "MainWindow.h"
 
-MainWindow::MainWindow(QWidget *p, Qt::WindowFlags f) : QMainWindow(p, f){
+MainWindow::MainWindow(QWidget* p) : QMainWindow(p){
 	setWindowTitle(qApp->applicationName());
     statusBar();
     statusBar()->setSizeGripEnabled(false);
@@ -192,16 +192,16 @@ void MainWindow::showAbout(){
 	QString str;
 	str.append(qApp->applicationName());
 	str.append(" ").append(qApp->applicationVersion()).append("<br>");
-	str.append("License: GPL v3 <br/>");
-	str.append("Website: <a href='http://github.com/dualword/dualword-index/'>dualword-index</a> <br/>");
-	str.append("&copy;2013 Alexander Busorgin <br/>");
+    str.append("License: GPL v3+ <br/>");
+    str.append("Website: <a href='https://github.com/dualword/dualword-index/'>dualword-index</a> <br/>");
+    str.append("&copy; 2013-2025 Alexander Busorgin <br/>");
 	QMessageBox::about(this, tr("About"), str );
 }
 
 void MainWindow::open(){
 	QFileDialog d(this,tr("Choose directory"), QDir::homePath());
 	d.setFilter(QDir::Dirs | QDir::Hidden);
-	d.setFileMode(QFileDialog::DirectoryOnly);
+    d.setFileMode(QFileDialog::Directory);
 	d.setViewMode(QFileDialog::List);
 	d.setOption(QFileDialog::ShowDirsOnly,true);
 	d.setOption(QFileDialog::ReadOnly,true);
@@ -218,7 +218,7 @@ void MainWindow::openIndex(){
 		idx->open();
 		statusBar()->showMessage(QString("Loading ").append(QString::number(idx->dcount()))
 				.append(" documents..."));
-		QObject::connect(idx.data(),SIGNAL(setDoc(const doc&)), this, SLOT(setDoc(const doc&)));
+		QObject::connect(idx.get(),SIGNAL(setDoc(const doc&)), this, SLOT(setDoc(const doc&)));
 		first();
 		bReload->setEnabled(true);
 		bClose->setEnabled(true);
