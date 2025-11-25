@@ -30,6 +30,7 @@ DualWordIndex::DualWordIndex(int &argc, char **argv) : QApplication(argc, argv) 
 	#endif
 
 	QApplication::setQuitOnLastWindowClosed(true);
+    setWindowIcon(QIcon(":/dualword-index.png"));
 
 }
 

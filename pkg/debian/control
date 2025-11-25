@@ -1,7 +1,7 @@
 Source: dualword-index
-Section: utilities
+Section: devel
 Priority: optional
-Maintainer: 
+Maintainer: Alexander Busorgin <alexanderbusorgin@yahoo.com>
 Build-Depends: debhelper-compat (= 13), automake, qt6-base-dev, libxapian-dev
 Standards-Version: 4.7.2
 Homepage: https://github.com/dualword/dualword-index
@@ -12,7 +12,7 @@ Rules-Requires-Root: no
 Package: dualword-index
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description:  cross-platform Xapian index viewer
+Description: cross-platform Xapian index viewer
  With its help you can:
   -browse documents.
   -view and sort a list of terms.

@@ -34,6 +34,8 @@ win32 {
 	LIBS += -lxapian
 }
 
+RESOURCES = dualword-index.qrc
+
 OBJECTS_DIR = .build/obj
 MOC_DIR     = .build/moc
 RCC_DIR     = .build/rcc
